@@ -2,9 +2,12 @@
 
 namespace Modules\User\Http\Controllers;
 
+use App\Http\Resources\DataResource;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
 use Modules\Core\Entities\Category;
+use Modules\User\Http\Requests\CategoryRequest;
+use Modules\User\Http\Requests\CategoryUpdateRequest;
 use Spatie\QueryBuilder\QueryBuilder;
 
 class CategoryController extends Controller
@@ -28,8 +31,8 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request): DataResource
     {
-        $Category = Category::create($request->validated());
-        return new DataResource($Category);
+        $category = Category::create($request->validated());
+        return new DataResource($category);
     }
 
     /**
