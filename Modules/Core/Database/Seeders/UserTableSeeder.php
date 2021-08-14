@@ -21,23 +21,23 @@ class UserTableSeeder extends Seeder
         $users = [
             [
                 "name" => "Admin",
-                "email" => "admin@classifier.com",
+                "email" => "admin@gmail.com",
                 'email_verified_at' => Carbon::now(),
-                "password" => bcrypt("10qbit<2021>"),
+                "password" => bcrypt("password"),
                 'remember_token' => 'basic_token',
             ],
             [
                 "name" => "nirash",
-                "email" => "nirash@classifier.com",
+                "email" => "nirash@gmail.com",
                 'email_verified_at' => Carbon::now(),
-                "password" => bcrypt("10qbit<2021>"),
+                "password" => bcrypt("password"),
                 'remember_token' => 'basic_token',
             ],
             [
                 "name" => "naveen",
-                "email" => "naveen@classifier.com",
+                "email" => "naveen@gmail.com",
                 'email_verified_at' => Carbon::now(),
-                "password" => bcrypt("10qbit<2021>"),
+                "password" => bcrypt("password"),
                 'remember_token' => 'basic_token',
             ],
         ];

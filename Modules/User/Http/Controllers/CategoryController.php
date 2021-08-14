@@ -9,11 +9,6 @@ use Spatie\QueryBuilder\QueryBuilder;
 
 class CategoryController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:sanctum');
-        $this->middleware('user.check');
-    }
 
     /**
      * Display a listing of the resource.
